@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+
+/* javascript for implementing read more funtionality */
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $(".content").hide();
+        $("#read-1").click(function(){
+            $(this).hide();
+    		$("#content-1").show();
+        });
+        $("#read-2").click(function(){
+            $(this).hide();
+    		$("#content-2").show();
+        });
+        $("#read-3").click(function(){
+            $(this).hide();
+        $("#content-3").show();
+        });
+        $("#read-4").click(function(){
+            $(this).hide();
+        $("#content-4").show();
+        });
+    });
+    </script>
+
+    <script>
+    function showImage(imgName) {
+        document.getElementById('largeImg').src = imgName;
+        showLargeImagePanel();
+        unselectAll();
+    }
+
+    function showLargeImagePanel() {
+        document.getElementById('largeImgPanel').style.visibility = 'visible';
+    }
+
+    function unselectAll() {
+        if (document.selection) document.selection.empty();
+        if (window.getSelection) window.getSelection().removeAllRanges();
+    }
+
+    function hideMe(obj) {
+        obj.style.visibility = 'hidden';
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Kai's Blog</title>
+  </head>
+  <body>
+    <header>
+      <nav class="social-link">
+        <ul>
+          <li>
+          <!-- Icon original dimension 494 × 412 -->
+          <a href="https://www.linkedin.com/in/lin-nathan-ba3793164/" target="window"><img src="../img/ln-icon.png" alt="LinkedIn" width="30.875" height="25.75"></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- <img src="img/profile-pic.jpg" alt="Profile Picture" class="profile-pic"> -->
+
+      <nav class="main-nav">
+        <ul class="primary-list">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a href="../about_me/about_me.html">About Me</a>
+                <ul class="secondary-list">
+                  <li><a href="../about_me/about_me.html#experience">Experience</a></li>
+                  <li><a href="../about_me/about_me.html#skills">Skills</a></li>
+                  <li><a href="../about_me/about_me.html#certification">Certification</a></li>
+                  <li><a href="../about_me/about_me.html#education">Education</a></li>
+                </ul>
+            </li>
+            <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="../contact_me/contact_me.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<div class="blog-whole clearfix">
+<!--    Here goes the content on the page    -->
+    <main class="blog-content">
+      <h1>Kai's Tech Blog</h1>
+      <h2 class="blog_subtitle">Cyber Awareness<h2>
+
+      <article class="blog-main">
+
+        <div id="largeImgPanel" onclick="hideMe(this);">
+          <img id="largeImg" style="height: 450px; margin: 0; padding: 60px 80px 60px;">
+        </div>
+
+        <section>
+          <div><a id="app-sec"></a></div>
+          <h3 class="blog-anchor">Application Security</h3>
+          <div class="img-float"><img src="../img/blog_pic/SSDLC.png" alt="blog-pic" width="450" height="270" style="cursor: pointer" onclick="showImage('../img/blog_pic/SSDLC.png');"></div>
+
+          <div class="snippet">
+            <div>Programming code security is also an essential part of information security. It is a vast and deep topic.<br><br> The information security specialist who specializes in architectural security can be the person who does not even know how to write programming code.</div><br><div id="read-4" class="read">...Read More</div><div id="content-4" class="content">
+
+            <div><em class="em">Programming code security is a very different area of the focus.</em> It has a range of major subtopics. Each of the topics can still be quite broad. Those subtopics of coding security are also deep enough to let someone claim a specialist about it.<br><br> To know the application security, it requires the knowledge of programming, secure coding principles, application architectural security, credential management, deployment security…etc. <br><br>One of the systematic ways of categorizing the subtopics would be catering those subtopics to the software development life cycle (SDLC). The principle becomes much more concrete after the systematic ways of classifying. Through this, the application in different development stages can comply with the application security principles. The method is commonly referred to as the Secure Software Development Life Cycle (SSDLC).</div><br>
+
+            <div>Using SSDLC has many virtues. It facilitates communications between engineers. Without this, it would be quite abstract. It allows the newly discovered vulnerabilities to be integrated into the guidelines efficiently.
+            Since different application development of software would have various potential vulnerabilities surface, each task team could set up the customized principles and guidelines beforehand. For instance, website development is quite different from low-level driver writing. The requirement of the security level is quite different as well. People would not interact with the low-level driver directly. Yet, people would browse your website and input the data directly.</div>
+            <div class="reference">
+              <br><em>Reference</em><br>
+              <cite>Picture By Hack2Secure - https://www.pinterest.com/pin/797207571509409038/</cite></div>
+            </div>
+          </div>
+          <footer><time datetime="2020-07-23T20:11" class="post-timestamp">Jul 23, 2020 at 08:11pm</time></footer>
+        </section>
+
+        <section>
+          <div><a id="apt"></a></div>
+          <h3 class="blog-anchor">APT – Advanced Persistent Threat</h3></a>
+          <div class="img-float"><img src="../img/blog_pic/Advanced_persistent_threat_lifecycle.jpg" alt="blog-pic" width="330" height="320" style="cursor: pointer" onclick="showImage('../img/blog_pic/Advanced_persistent_threat_lifecycle.jpg');"></div>
+
+          <div class="snippet">
+<div>How rampant the threats are in the cybersecurity world?</div><br>
+
+Cybersecurity crime is committed frequently from the personal level to the enterprise level and the country level. It is happening quite often with or without our notice.<div id="read-3" class="read">...Read More</div><div id="content-3" class="content"> <br>The motivation of perpetrator has evolved with time. Before, there are people just doing the grey hat or black hat hacking for fun and personal feeling of achievement. Nowadays, I believe there are covet hacking groups in almost half of the countries on earth. Each country would form this kind of covet group like recruiting army. Quite a few people are enlisted. One entity of the Internet is that there are no clear boundaries. This kind of group may carry out any missions anywhere.
+<br><br>
+For this reason, these groups have to be low-profile and be as transparent as possible. <em class="em">This group usually carry out extensive scale activities which would be divided into different tasks for a variety of smaller groups. The group would try their best to remain undetected for an extended period. There are even different stages for identifying the progress of the activity.</em>
+<br>
+<br>
+This is Advanced Persistent Threat, short for APT.
+APT is often even used to name the group with a number.
+Russian was suspected as the country that carried out threat activity targeting COVID-19 vaccine development.
+<br><br>
+<div class="link_intro">For more information, you can take a look of the links below:</div><br>
+<div class="blog_post_link_outer">
+<div class="blog_post_link"><a href="https://cse-cst.gc.ca/en/media/2020-07-16" target="_blank">CSE statement</a></div>
+<div class="blog_post_link"><a href="https://globalnews.ca/news/7183585/russian-hackers-target-canada-u-s-and-u-k-covid-19-vaccine-research-intelligence-agency-says/" target="_blank">News</a></div>
+</div>
+
+<div>How they became the suspect?</div>
+<div>Because of the pattern has a high similarity to the group APT29, which has long been identified as a Russian backed hacking group.</div>
+<br><div>According to the CSE warning, "CSE assesses that APT29, also named “the Dukes” or “Cozy Bear” was responsible for this malicious activity, and almost certainly operates as part of Russian intelligence services. This assessment is supported by partners at Government Communications Headquarters’ National Cyber Security Centre, the National Security Agency, and the Department of Homeland Security’s Cybersecurity and Infrastructure Security Agency." (CSE, 2020)</div>
+<div class="reference">
+  <br><em>Reference</em><br>
+  <cite>CSE Statement on Threat Activity Targeting COVID-19 Vaccine Development – Thursday, July 16, 2020 | Communications Security Establishment. (2020, July 16). CSE. https://cse-cst.gc.ca/en/media/2020-07-16</cite><br>
+  <cite>Picture By Dell SecureWorks - https://www.secureworks.com/blog/advanced-persistent-threats-apt-a, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=26012880</cite><br>
+</div>
+            </div>
+          </div>
+
+          <footer><time datetime="2020-07-22T17:06" class="post-timestamp">Jul 22, 2020 at 05:06pm</time></footer>
+        </section>
+
+        <section>
+          <div><a id="did"></a></div>
+          <h3 class="blog-anchor">DiD - Defense in Depth</h3></a>
+          <div class="img-float"><img src="../img/blog_pic/DiD.png" alt="blog-pic" width="466" height="280" style="cursor: pointer" onclick="showImage('../img/blog_pic/DiD.png');"></div>
+          <div class="snippet"><div>After knowing DiD, you would have a general idea of how broad and deep that cybersecurity field has involved.</div><br>
+                              <br><br><br><div>Have you ever wondered how the financial corporation cope with cybersecurity?</div><br>
+                              <div>As the digitalization coming, the money is just numbers and digits to us now. Therefore, cybersecurity is critical and vital to financial enterprises and corporations. They need to keep their data safe and set up layers after layers for accessing. They have to take it seriously.<div id="read-1" class="read">...Read More</div></div><br><div id="content-1" class="content">
+                              When I worked as a salesperson, DiD was a common term used for introducing the cybersecurity solution. It provides a big picture of deployment both for vendors and buyers. During my days working for customers of financial corporations, they usually used it to examine the comprehensiveness of the implementation of cybersecurity solutions. <em class="em">It was also a strategy that they would refer to when they considered whether the security software products were the right fit.</em> They can granularly translate those things into multiple real security products that were sold in the market. After that, they could find out what they were lack of and focused on finding a list of similar options that work as the right niche for it. <br><br>For a specific example, when customers need security products to protect their privilege credentials, which are accounts and passwords with high privilege, in enterprises, there are several choices. The choices may be CyberArk PAS (Privileged Access Security), BeyondTrust PAM (Privileged Access Management) or CA PAM (Privileged Access Manager). These choices would form a list for the specific niche in the granularly translated DiD.
+                            </div>
+
+          </div>
+
+          <footer><time datetime="2020-07-12T11:22" class="post-timestamp">Jul 12, 2020 at 11:22am</time></footer>
+        </section>
+
+        <section>
+          <a id="blog_start"><h3 class="blog-anchor">Blog Start!</h3></a>
+          <div class="img-float"><img src="../img/blog_pic/start.jpg" alt="blog-pic" width="366" height="436"></div>
+          <div class="snippet">Today is the first day I start to write my blog! Every information I provide here would be either cited from the external sources or my personal experience. I also would share some important news in the cybersecurity world from time to time. I hope you can enjoy your stay. You can take away anything you deem useful. That would be my honour.
+          </div>
+          <footer><time datetime="2020-07-16T18:06" class="post-timestamp">Jul 9, 2020 at 06:06pm</time></footer>
+        </section>
+
+
+      </article>
+    </main>
+
+<!--   Right side navigation   -->
+    <aside class="sidebar">
+      <article>
+        <div class="popular-post">
+          <h3>POPULAR POST</h3>
+          <ul class="post-link-background">
+            <li><a href="#blog_start">Blog Start!</a></li>
+            <li><a href="#did">DiD - Defense in Depth</a></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="recently-shared">
+          <h3>RECENTLY SHARED</h3>
+          <ul class="post-link-background">
+            <li><a href="#app-sec">Application Security</a></li>
+            <li><a href="#apt">APT – Advanced Persistent Threat</a></li>
+            <li><a href="#did">DiD - Defense in Depth</a></li>
+            <li></li>
+          </ul>
+        </div>
+      </article>
+    </aside>
+</div>
+<!--   Blog footer   -->
+    <footer>
+      <p class="legal"><small>Copyrights &copy; 2020 Kai's Blog. All Rights Reserved.</small></p>
+    </footer>
+  </body>
+</html>

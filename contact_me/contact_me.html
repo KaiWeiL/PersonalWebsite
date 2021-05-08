@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Kai's Blog</title>
+  </head>
+  <body>
+    <header>
+      <nav class="social-link">
+        <ul>
+          <li>
+          <!-- Icon original dimension 494 × 412 -->
+          <a href="https://www.linkedin.com/in/lin-nathan-ba3793164/" target="window"><img src="../img/ln-icon.png" alt="LinkedIn" width="30.875" height="25.75"></a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- <img src="img/profile-pic.jpg" alt="Profile Picture" class="profile-pic"> -->
+
+      <nav class="main-nav">
+        <ul class="primary-list">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+                <a href="../about_me/about_me.html">About Me</a>
+                <ul class="secondary-list">
+                  <li><a href="../about_me/about_me.html#experience">Experience</a></li>
+                  <li><a href="../about_me/about_me.html#skills">Skills</a></li>
+                  <li><a href="../about_me/about_me.html#certification">Certification</a></li>
+                  <li><a href="../about_me/about_me.html#education">Education</a></li>
+                </ul>
+            </li>
+            <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+            <li><a href="../blog/blog.html">Blog</a></li>
+            <li><a href="contact_me.html">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <ul class="person-info">
+        <li>+1-437-971-2196</li>
+        <li>nathan741953@gmail.com</li>
+      </ul>
+      <p class="or">OR</p>
+      <form action="../php/process.php" method="post">
+        <fieldset class="leave-info">
+          <h2>Leave You Contact Info</h2>
+          <div class="field">
+          <label for="first-name">First Name </label>
+          <input type="text" id="first-name" name="fname">
+          </div>
+          <div class="field">
+          <label for="last-name">Last Name </label>
+          <input type="text" id="last-name" name="lname">
+          </div>
+          <div class="field">
+          <label for="email" class="email" name="email">Email </label>
+          <input type="text" id="email">
+          </div>
+          <div class="field">
+          <label for="comments">Comment </label>
+          <textarea id="comments" cols="66" rows="6" class="textarea" name="comments"></textarea>
+          </div>
+          <input type="submit" class="submit-button">
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p class="legal"><small>Copyrights &copy; 2020 Kai's Blog. All Rights Reserved.</small></p>
+    </footer>
+  </body>
+</html>
