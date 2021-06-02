@@ -8,7 +8,7 @@
         {projectName:"Penetration Testing Hub",description:"A forum written in C#, ASP.Net Core MVC \
         dedicated to the penetration testers and cybersecurity enthusiasts. \
         It hosted on Amazon AWS VPS Linux machine with Nginx and MySQL database"},
-        {projectName:"Symantec DCS Excel VBA Report Facilitator",description:"A web app written with pure\
+        {projectName:"Symantec DCS Excel VBA Report Facilitator (GIF)",description:"A web app written with pure\
         JavaScript and HTML5 DOM and \
         utilized Audio API, Storage API and JSON API. It Solved re-sequence problem, sorting problem and \
         synchronization problem"},
